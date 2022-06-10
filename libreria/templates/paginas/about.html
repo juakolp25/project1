@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block titulo %} Quien soy {% endblock %}
+
+{% block contenido %} 
+
+{% load static %}
+
+<main>
+    <div class="conainer-tatuajes_about">
+        <h2 class="title">El Artista</h2>
+        <div class="container-profile_about">
+            <div class="section_profile">
+                <div class="card_img-container_about">
+                    <img src="{% static 'Imagenes/kasares.jpg' %}" alt="perfil">
+                </div>
+                <div class="card_header">
+                    <h2 class="card_titulo no-margin">Luis Bogado</h2>
+                    <p class="card_subtitulo">Tatuador Profesional</p>
+                </div>
+            </div>
+            <div class="section_data">
+                <div class="container_text">
+                    <p>Luigi no pasa inadvertido y deja su marca en quienes lo conocen. Y no solo por su carisma y buena onda, sino tambien por las obras de arte que realiza desde hace años en el cuerpo de miles de personas.</p><br><br>
+                    <p>Tatuador de profesion, amante del futbol, hincha de Boca jrs. Son algunos de sus atributos particulares. Sus cuidados y politicas a la hora de tatuar, le dejan en un buen pedestar, y particularmente lo detallista que es cuando esta realizando un tatuaje.</p><br><br>
+                    <div id='social_about'>
+                        <a class='facebook' title='facebook' href='#'>
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class='twitter' title='twitter' href='#'>
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class='gplus' title='Google plus' href='#'>
+                          <i class="fa fa-google-plus"></i>
+                        </a>
+                      </div><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="container-skill_about">
+            <div class="container-experiencia">
+                <section class="card">
+                    <h2 class="card_titulo">Tatuador</h2>
+                    <div class="skills">
+                        <div class="skills_item">
+                            <small>Años de Exp.:</small>
+                            <div class="skills_header">
+                                <span class="skills_start-level">0</span>
+                                <span class="skills_start-level">12</span>
+                            </div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Dibujando</p>
+                            <div class="skills_bar skills_bar--100"></div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Tatuando</p>
+                            <div class="skills_bar skills_bar--90"></div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Procreate</p>
+                            <div class="skills_bar skills_bar--60"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container-education">
+                <section class="card">
+                    <h2 class="card_titulo">Estilos de Tatuajes</h2>
+                    <div class="skills">
+                        <div class="skills_item">
+                            <small>Estilos:</small>
+                            <div class="skills_header">
+                                <span class="skills_start-level">0</span>
+                                <span class="skills_start-level">10</span>
+                            </div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Old School</p>
+                            <div class="skills_bar skills_bar--100"></div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Realismo</p>
+                            <div class="skills_bar skills_bar--90"></div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Letras</p>
+                            <div class="skills_bar skills_bar--60"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container-education">
+                <section class="card">
+                    <h2 class="card_titulo">Estilos de Tatuajes</h2>
+                    <div class="skills">
+                        <div class="skills_item">
+                            <small>Estilos:</small>
+                            <div class="skills_header">
+                                <span class="skills_start-level">0</span>
+                                <span class="skills_start-level">10</span>
+                            </div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Old School</p>
+                            <div class="skills_bar skills_bar--100"></div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Realismo</p>
+                            <div class="skills_bar skills_bar--90"></div>
+                        </div>
+                        <div class="skills_item">
+                            <p class="skills_tech">Letras</p>
+                            <div class="skills_bar skills_bar--60"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

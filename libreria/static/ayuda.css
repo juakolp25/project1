@@ -1,0 +1,47 @@
+:root{
+    --color-text: #970909;
+    --border-text: 1px solid #303030;
+    --bg-navfoot: rgb(8, 8, 8);
+    --color-parrafo: rgb(168, 167, 167);
+    --skills-bar-length: 0%;
+    --bg-dark: rgb(22, 22, 22);
+    --bg-mrl: #303030;
+    --bg-lmrl: #bfbfbf;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bg-lmrl);
+}
+
+.container-help{
+    margin: auto;
+    background-color: var(--bg-navfoot);
+    border-radius: 5px;
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+    padding: 20px;
+    color: var(--bg-lmrl);
+    margin-bottom: 15px;
+}
+
+.text-css{
+    text-align: justify;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.text-css_center{
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.sub-title{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 5px;
+}

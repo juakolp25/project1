@@ -1,0 +1,102 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% block titulo %} {% endblock %} </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static 'Imagenes/logo.ico' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}" content-type="text/css">
+    <link rel="stylesheet" href="{% static 'formulario.css' %}" content-type="text/css">
+    <link rel="stylesheet" href="{% static 'ayuda.css' %}" content-type="text/css">
+    <link rel="stylesheet" href="{% static 'about.css' %}" content-type="text/css">
+    <script src = "https://use.fontawesome.com/d6261d3c9f.js" > </script>
+  </head>
+  <body>
+    <nav class="block-navbar">
+      <div class="logo-navbar">
+          <a href="inicio"><img src="{% static 'Imagenes/logoksr.jpg' %}" alt="logo"></a>
+      </div>
+      <div class="switches">
+          <div id="toggle-theme" class="toggle-theme">
+              <p id="toggle-text" class="toggle-theme_text">Light Mode</p>
+          </div>
+      </div>
+      <ul class="menu-list">
+          <li class="link-menu">
+              <a href="inicio" class="link">
+                  Inicio
+              </a>
+          </li>
+          <li class="link-menu">
+              <a href="formulario" class="link">
+                  Contacto
+              </a>
+          </li>
+      </ul>
+      <div class="toggle" id="btn-toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+      </div>
+      <ul class="menu-list_responsive" id="menu-list_responsive">
+          <li class="link-menu_responsive">
+              <a href="inicio" class="link">
+                  Inicio
+              </a>
+          </li>
+          <li class="link-menu_responsive">
+              <a href="formulario" class="link">
+                  Contacto
+              </a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      {% block contenido %} {% endblock %}
+    </div>
+
+    <footer>
+      <div class="block-footer border-botton_footer">
+          <ul class="menu-footer footer-sa_block">
+              <li class="link-menu_footer">
+                  <a href="about" class="link">Quien Soy</a>
+              </li>
+              <li class="link-menu_footer">
+                  <a href="tatuajes" class="link">Tatuajes</a>
+              </li>
+              <li class="link-menu_footer">
+                  <a href="diseno" class="link">Diseños</a>
+              </li>
+              <li class="link-menu_footer">
+                  <a href="ayuda" class="link">Ayuda</a>
+              </li>
+          </ul>
+      </div>
+      <div class="block-footer border-botton_footer">
+          <div class="text-footer">
+              <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sapiente.</i></p>
+          </div>
+          <div class="redes-footer">
+                <div id='social'>
+                    <a class='facebook' title='facebook' href='#'>
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class='twitter' title='twitter' href='#'>
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class='gplus' title='Google plus' href='#'>
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </div>                  
+          </div>
+      </div>
+      <div class="block-footer">
+          <p>&COPY;2022 Copyright: <a href="#" class="link-me">8hCompany</a></p>
+      </div>
+  </footer>
+  <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block titulo %} Tatuajes {% endblock %}
+
+{% block contenido %} 
+
+{% load static %}
+
+<main>
+    <div class="conainer-tatuajes">
+        <h2 class="title">Tatuajes</h2>
+        <div class="container-tatu_galeria">
+            <div class="container-img_tatu">
+                {% for t in tatuajes %}
+                    <div class="card_img-container">
+                        {% if t.imagen %}
+                        <img src="{{ t.imagen.url }}" alt="tatuaje">
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

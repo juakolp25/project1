@@ -1,0 +1,114 @@
+:root{
+    --color-text: #970909;
+    --border-text: 1px solid #303030;
+    --bg-navfoot: rgb(8, 8, 8);
+    --color-parrafo: rgb(168, 167, 167);
+    --skills-bar-length: 0%;
+    --bg-dark: rgb(22, 22, 22);
+    --bg-mrl: #303030;
+    --bg-lmrl: #bfbfbf;
+}
+
+.container_form-full{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-navfoot);
+    border-radius: 5px;
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.control-group{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+}
+
+label{
+    color: var(--bg-lmrl);
+    text-transform: uppercase;
+}
+
+input, textarea, select{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+    color: var(--bg-lmrl);
+    outline: none;
+}
+
+.textinput{
+    width: 100%;
+}
+
+button{
+    padding: 5px;
+    height: max-content;
+    margin-left: 10px;
+}
+
+.card_img-formulario{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid var(--color-text);
+}
+
+.block_text-send{
+    display: flex;
+}
+
+textarea{
+    min-height: 70px;
+    max-height: 70px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.red{
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+}
+
+.green{
+    color: rgb(17, 75, 17);
+    border: 1px solid rgb(17, 75, 17);
+}
+
+.respuesta-form{
+    width: max-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 950px) {
+    .container_form-full{
+        display: block;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .block-form{
+        display: block;
+    }
+    textarea{
+        width: 100%;
+        height: 70px;
+    }   
+}
